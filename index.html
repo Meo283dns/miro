@@ -1,0 +1,77 @@
+<!-- MIRO Full Feature Website - Base HTML Structure -->
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIRO - فیلم و زنجیرە</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MIRO</h1>
+    <nav>
+      <input type="text" id="search" placeholder="گەڕان...">
+      <a href="#login">چوونە ژوورەوە</a>
+      <a href="#register">خۆتۆمارکردن</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top-250">
+      <h2>Top 250 فیلم</h2>
+      <div class="movie-list"></div>
+    </section>
+
+    <section id="upload">
+      <h2>ئەپلۆدی فیلم/زنجیرە</h2>
+      <form id="uploadForm">
+        <input type="text" placeholder="ناوی فیلم یا زنجیرە">
+        <input type="file" accept="video/*">
+        <textarea placeholder="کورتە دەربارە"></textarea>
+        <select id="quality">
+          <option>1080p</option>
+          <option>720p</option>
+          <option>480p</option>
+        </select>
+        <button>ئەپلۆد</button>
+      </form>
+    </section>
+
+    <section id="player">
+      <h2>وێنەگر</h2>
+      <video controls src="sample.mp4"></video>
+      <div class="subtitles">
+        <button>کوردی</button>
+        <button>عەرەبی</button>
+        <button>English</button>
+      </div>
+    </section>
+
+    <section id="comments">
+      <h2>کۆمێنتەکان</h2>
+      <form>
+        <textarea placeholder="کۆمێنت بنووسە..."></textarea>
+        <label><input type="checkbox"> سپۆیلەر</label>
+        <button>ناردن</button>
+      </form>
+      <div class="comment-list"></div>
+    </section>
+
+    <section id="ads">
+      <h2>ریکلام</h2>
+      <div class="ad-space">ریکلامەکان لێرە دابنێ</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>بەشداری بکە لە: 
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://youtube.com">YouTube</a>
+    </p>
+    <p>© 2025 MIRO</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
